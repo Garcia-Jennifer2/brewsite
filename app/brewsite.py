@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/home")
 def home():
-    return rt("home.html", user ="James Smith")
+    return rt("home.html", user ="Jennifer Garcia")
 
 @app.route("/breweries")
 def breweries():
@@ -19,12 +19,11 @@ def breweries():
 
 @app.route("/beer_types")
 def beer_types():
-    return rt("beer_types.html", user ="James Smith")
+    return rt("beer_types.html", user ="Jennifer Garcia")
 
 @app.route("/about")
 def about():
-    return rt("about.html", user ="James Smith")
+    return rt("about.html", user ="Jennifer Garcia")
 
 if __name__ == "__main__":
 	app.run(debug=True)
-    
